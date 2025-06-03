@@ -3530,10 +3530,8 @@ CCSE.launch = function(){
 		switch(prefName){
 			case 'showVersionNo':
 				if(CCSE.config[prefName]){
-					l('CCSEversionNumber').style.display = '';
 					l('CCSEversionGame').style.display = '';
 				}else{
-					l('CCSEversionNumber').style.display = 'none';
 					l('CCSEversionGame').style.display = 'none';
 				}
 				break;
