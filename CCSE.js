@@ -113,8 +113,6 @@ CCSE.launch = function(){
 			CCSE.LaunchOtherMods();
 			if(CCSE.gameHasLoadedSave) Game.loadModData();
 		}
-		
-		CCSE.applyPref('showVersionNo');
 	}
 	
 	
@@ -3523,18 +3521,6 @@ CCSE.launch = function(){
 			if(config.milkType)  CCSE.config.milkType = config.milkType;
 			if(config.bgType)    CCSE.config.bgType = config.bgType;
 			if(config.showVersionNo !== undefined) CCSE.config.showVersionNo = config.showVersionNo;
-		}
-	}
-	
-	CCSE.applyPref = function(prefName){
-		switch(prefName){
-			case 'showVersionNo':
-				if(CCSE.config[prefName]){
-					l('CCSEversionGame').style.display = '';
-				}else{
-					l('CCSEversionGame').style.display = 'none';
-				}
-				break;
 		}
 	}
 	
